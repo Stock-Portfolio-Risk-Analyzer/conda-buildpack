@@ -1,6 +1,6 @@
 if [ ! -d /app/.heroku/miniconda ]; then
     puts-step "Preparing Python/Miniconda Environment (3.5.2)"
-    curl -Os https://github.com/Stock-Portfolio-Risk-Analyzer/conda-buildpack/blob/master/Miniconda.sh
+    curl -Os http://gleisner.xyz/Miniconda.sh
     bash Miniconda.sh  -p /app/.heroku/miniconda/ -b | indent
     rm -fr Miniconda.sh
 
